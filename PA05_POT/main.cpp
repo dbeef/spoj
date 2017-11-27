@@ -131,10 +131,6 @@ int main() {
     //Modulo przez 1:
     //0 - 0
 
-
-
-    //Pomijam potęgi x^1
-
     long n;
     cin >> n;
 
@@ -144,15 +140,6 @@ int main() {
         cin >> cases[a][0] >> cases[a][1];
 
     for(long a =0;a<n;a++){
-
-        if(cases[a][0] == 1) {
-            cout << 1 << '\n';
-            continue;
-        }
-        if(cases[a][1] == 1) {
-            cout << cases[a][0] << '\n';
-            continue;
-        }
 
         unsigned short moduloDivisorIndex = (cases[a][0] % 5);
 //        cout << "Modulo divisor index: " << moduloDivisorIndex << endl;
